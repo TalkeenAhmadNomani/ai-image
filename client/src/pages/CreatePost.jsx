@@ -31,7 +31,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          "ai-image-silk.vercel.app/api/v1/generate-image",
+          "https://ai-image-silk.vercel.app/api/v1/generate-image",
           {
             method: "POST",
             headers: {

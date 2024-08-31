@@ -28,12 +28,15 @@ const Home = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("ai-image-silk.vercel.app/api/v1/post", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://ai-image-silk.vercel.app//api/v1/post",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (response.ok) {
         const result = await response.json();
