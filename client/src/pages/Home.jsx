@@ -29,7 +29,7 @@ const Home = () => {
 
     try {
       const response = await fetch(
-        "https://ai-image-silk.vercel.app//api/v1/post",
+        "https://ai-image-backend-nine.vercel.app/api/v1/post",
         {
           method: "GET",
           headers: {

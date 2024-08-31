@@ -31,7 +31,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          "https://ai-image-silk.vercel.app/api/v1/generate-image",
+          "https://ai-image-backend-nine.vercel.app/api/v1/generate-image",
           {
             method: "POST",
             headers: {
@@ -95,8 +95,8 @@ const CreatePost = () => {
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
-          Generate an imaginative image through HUGGINGFACE and share it with the
-          community
+          Generate an imaginative image through HUGGINGFACE and share it with
+          the community
         </p>
       </div>
 
